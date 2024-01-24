@@ -1,0 +1,124 @@
+body {
+    margin: 1;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 60vh;
+    background-color: #828282;
+}
+
+img {
+    width: 30%;
+    height: auto;
+}
+.button-container {
+    text-align: center;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 150px; /* Adjust the distance from the top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+}
+
+#startButton {
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#stopButton {
+    background-color: #FF0000; /* Red color */
+    color: white;
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none;
+    
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* Basic styling for the dropdown */
+.dropdown {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the dropdown button */
+  .dropdown-btn {
+    width: 10%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    position: absolute;
+    top: 225px; /* Adjust the distance from the top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+  }
+  
+  /* Style for the dropdown content */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    position: absolute;
+    top: 280px; /* Adjust the distance from the top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+  }
+  
+  /* Style for each dropdown item */
+  .dropdown-item {
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+    color: #333;
+  }
+  
+  /* Change color on hover */
+  .dropdown-item:hover {
+    background-color: #ddd;
+  }
+  
+  .video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 75%; /* Adjust this percentage based on the aspect ratio of your videos */
+}
+
+#videoPlayer {
+    position: relative;
+    top: 170px; /* Adjust the distance from the top */
+    left: -300%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    width: 100%;
+    height: 100%;
+}
+.app-header {
+  background-color: rgb(255, 2, 2); /* Change the background color as needed */
+  color: rgb(0, 0, 0); /* Change the text color as needed */
+  text-align: center;
+  padding: 20px;
+  position: absolute;
+  top: 20px; /* Adjust the distance from the top */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 2em; /* Adjust the font size as needed */
+}

@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Streaming</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://unpkg.com/video.js/dist/video-js.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/video.js/dist/video.min.js"></script>
+</head>
+<body>
+    <header class="app-header">
+        <h1>Echelon Object Detection and Streaming</h1>
+    </header>
+    <div class="button-container">
+        <button id="startButton" onclick="startStream()">Start Stream</button>
+        <button id="stopButton" onclick="stopStream()">Stop Stream</button>
+    </div>
+    <div class="dropdown">
+        <div class="dropdown-btn" onclick="toggleDropdown()">Select Video</div>
+        <div class="dropdown-content" id="dropdownContent">
+            <!-- <a href="#" class="dropdown-item" onclick="playVideo('/videos/video1.mp4')">Video 1</a>
+            <a href="#" class="dropdown-item" onclick="playVideo('/videos/video2.mp4')">Video 2</a>
+            <a href="#" class="dropdown-item" onclick="playVideo('/videos/video3.mp4')">Video 3</a> -->
+            <!-- Add more video options as needed -->
+        </div>
+        <!-- <video width="640" height="480" controls  >
+            <source src="/videos/new-v2.mp4" type="video/mp4">
+
+        </video > -->
+        <div class="video-container">
+            <video id="videoPlayer" controls width="640" height="480">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <img id="videoStream" alt="Video Stream">
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
